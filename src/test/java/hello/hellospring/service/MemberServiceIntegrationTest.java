@@ -31,8 +31,6 @@ public class MemberServiceIntegrationTest {
         //then
         Member findMember = memberService.findOne(saveId).get();
         List<Member> f = memberService.findMembers();
-        System.out.println(f);
-        System.out.println( "qweqweqwe " +findMember.getName());
         assertThat(member.getName()).isEqualTo(findMember.getName());
     }
 
